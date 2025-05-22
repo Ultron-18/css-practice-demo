@@ -41,7 +41,7 @@ css-practice-demo/
 
 ## 📸 Screenshot
 
-![image](https://github.com/user-attachments/assets/07694657-ec00-4931-abc4-9da9dae849eb)
+![image](https://github.com/user-attachments/assets/c659d767-5cb2-44f2-9b64-400cbf245c91)
 
 
 ---
