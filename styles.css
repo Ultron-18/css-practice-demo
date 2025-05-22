@@ -1,0 +1,101 @@
+/* =============== CSS Properties, Selectors, Fonts, Text =============== */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f3f3f3;
+  color: #333;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 0.5em;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* =============== Layout and Box Model =============== */
+header, footer {
+  text-align: center;
+  background-color: #004466;
+  color: #fff;
+  padding: 1.5em 1em;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  padding: 2em;
+}
+
+/* =============== Profile Card =============== */
+.profile-card {
+  background-color: #fff;
+  padding: 2em;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+/* =============== Image Styling in CSS =============== */
+.profile-card img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid #004466;
+  margin-bottom: 1em;
+}
+
+/* =============== Text Classes =============== */
+.name {
+  font-size: 1.5rem;
+  color: #333;
+  margin: 0.5em 0;
+}
+
+.role {
+  font-size: 1rem;
+  color: #666;
+  font-style: italic;
+}
+
+.description {
+  font-size: 0.9rem;
+  margin-top: 1em;
+}
+
+/* =============== px vs em vs rem =============== */
+/* Body font size is base: 16px
+   - rem = relative to root
+   - em = relative to parent
+*/
+
+/* =============== Responsive Layout (Media Queries) =============== */
+@media screen and (max-width: 600px) {
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+  }
+
+  .profile-card {
+    width: 90%;
+    padding: 1em;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-bottom: 0.5em;
+  }
+
+  .description {
+    font-size: 1em;
+  }
+}
