@@ -4,6 +4,7 @@
 ![CSS](https://img.shields.io/badge/tech-CSS3-green)
 ![Responsive](https://img.shields.io/badge/mobile%20responsive-yes-brightgreen)
 
+
 A practical HTML & CSS demo project showcasing key CSS concepts such as:
 
 - ✅ CSS properties and selectors  
@@ -40,7 +41,7 @@ css-practice-demo/
 
 ## 📸 Screenshot
 
-![image](https://github.com/user-attachments/assets/8a5c1e99-a7b0-4cab-a499-092c23322d95)
+![image](https://github.com/user-attachments/assets/07694657-ec00-4931-abc4-9da9dae849eb)
 
 
 ---
