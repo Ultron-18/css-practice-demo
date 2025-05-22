@@ -1,2 +1,85 @@
-# css-practice-demo
-A practical HTML &amp; CSS demo project showcasing key CSS concepts such as selectors, properties, text and font styling, image formatting, box model, layout techniques, px vs em vs rem, Flexbox, and responsive design. Built for learning and visualizing how modern CSS works in real-world layouts.
+## 🎨 CSS Practice Demo
+
+![Status](https://img.shields.io/badge/status-learning-blue)
+![CSS](https://img.shields.io/badge/tech-CSS3-green)
+![Responsive](https://img.shields.io/badge/mobile%20responsive-yes-brightgreen)
+
+A practical HTML & CSS demo project showcasing key CSS concepts such as:
+
+- ✅ CSS properties and selectors  
+- ✅ Text and font styling  
+- ✅ Images styled via CSS  
+- ✅ Box model  
+- ✅ px vs em vs rem units  
+- ✅ Layout techniques  
+- ✅ Flexbox  
+- ✅ Responsive design with media queries
+
+This project is designed to help you learn and visualize how modern CSS works in real-world layouts using a clean, simple profile card.
+
+---
+
+## 🔍 Live Preview
+
+➡️ **[View on GitHub Pages](https://ultron-18.github.io/css-practice-demo/)**  
+
+---
+
+## 📁 Project Structure
+
+```
+
+css-practice-demo/
+├── index.html       # HTML markup for the page
+├── styles.css       # CSS for styling and layout
+└── README.md        # Project documentation
+
+````
+
+---
+
+## 📸 Screenshot
+
+![image](https://github.com/user-attachments/assets/8a5c1e99-a7b0-4cab-a499-092c23322d95)
+
+
+---
+
+## 🧠 Learning Outcomes
+
+This project helps learners:
+
+- Understand how to apply CSS selectors to style HTML elements
+- Style text, fonts, and images using modern CSS
+- Learn the box model and layout behavior
+- Compare unit types: `px`, `em`, and `rem`
+- Use Flexbox to build adaptive layouts
+- Apply responsive design using media queries
+
+---
+
+## 💻 How to Run
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/yourusername/css-practice-demo.git
+cd css-practice-demo
+````
+
+2. Open `index.html` in any modern browser.
+
+---
+
+
+
+## 📬 Feedback or Contribution
+
+Feel free to open issues or submit pull requests with improvements or new layout challenges.
+
+---
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
+
