@@ -1,101 +1,412 @@
-/* =============== CSS Properties, Selectors, Fonts, Text =============== */
-body {
-  font-family: 'Segoe UI', sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f3f3f3;
-  color: #333;
-}
+ /* CSS Reset & Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-h1 {
-  font-size: 2rem;
-  color: #ffffff;
-  margin-bottom: 0.5em;
-}
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+        }
 
-p {
-  font-size: 1rem;
-  line-height: 1.5;
-}
+        /* Typography & Font Styling */
+        .typography-demo h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-align: center;
+            color: #2c3e50;
+            margin: 1rem 0;
+            letter-spacing: -0.02em;
+        }
 
-/* =============== Layout and Box Model =============== */
-header, footer {
-  text-align: center;
-  background-color: #004466;
-  color: #fff;
-  padding: 1.5em 1em;
-}
+        .subtitle {
+            text-align: center;
+            color: #5a6c7d;
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            font-weight: 300;
+        }
 
-.card-container {
-  display: flex;
-  justify-content: center;
-  padding: 2em;
-}
+        .font-examples {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
 
-/* =============== Profile Card =============== */
-.profile-card {
-  background-color: #fff;
-  padding: 2em;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  width: 300px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  text-align: center;
-}
+        .font-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            border: 1px solid #e1e8ed;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
 
-/* =============== Image Styling in CSS =============== */
-.profile-card img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  border: 3px solid #004466;
-  margin-bottom: 1em;
-}
+        .font-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+        }
 
-/* =============== Text Classes =============== */
-.name {
-  font-size: 1.5rem;
-  color: #333;
-  margin: 0.5em 0;
-}
+        .font-card h3 {
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+        }
 
-.role {
-  font-size: 1rem;
-  color: #666;
-  font-style: italic;
-}
+        .serif-text { font-family: Georgia, serif; }
+        .sans-serif-text { font-family: Arial, sans-serif; }
+        .monospace-text { font-family: 'Courier New', monospace; }
 
-.description {
-  font-size: 0.9rem;
-  margin-top: 1em;
-}
+        /* Units Demo: px vs em vs rem */
+        .units-demo {
+            background: #ffffff;
+            padding: 2rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+            border: 1px solid #e1e8ed;
+        }
 
-/* =============== px vs em vs rem =============== */
-/* Body font size is base: 16px
-   - rem = relative to root
-   - em = relative to parent
-*/
+        .units-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
 
-/* =============== Responsive Layout (Media Queries) =============== */
-@media screen and (max-width: 600px) {
-  .card-container {
-    flex-direction: column;
-    align-items: center;
-    padding: 1em;
-  }
+        .unit-example {
+            padding: 1.5rem;
+            border-radius: 6px;
+            border-left: 4px solid #3498db;
+            background: #f8f9fa;
+        }
 
-  .profile-card {
-    width: 90%;
-    padding: 1em;
-  }
+        .px-example { font-size: 16px; }
+        .em-example { font-size: 1.2em; }
+        .rem-example { font-size: 1.1rem; }
 
-  h1 {
-    font-size: 1.5rem;
-    color: #ffffff;
-    margin-bottom: 0.5em;
-  }
+        .unit-label {
+            font-weight: 600;
+            color: #2c3e50;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
 
-  .description {
-    font-size: 1em;
-  }
-}
+        /* Image Formatting */
+        .image-gallery {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 2rem 0;
+        }
+
+        .image-container {
+            text-align: center;
+        }
+
+        .image-container h4 {
+            margin-bottom: 1rem;
+            color: #2c3e50;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+
+        .img-round {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid #ddd;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .img-square {
+            width: 120px;
+            height: 120px;
+            border-radius: 8px;
+            object-fit: cover;
+            border: 2px solid #ddd;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        /* Box Model Demo */
+        .box-model-demo {
+            background: #ffffff;
+            padding: 2rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+            border: 1px solid #e1e8ed;
+        }
+
+        .box-example {
+            width: 240px;
+            height: 120px;
+            background: #3498db;
+            color: white;
+            padding: 20px;
+            margin: 20px auto;
+            border: 5px solid #2980b9;
+            border-radius: 6px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+
+        .box-explanation {
+            text-align: center;
+            margin-top: 1rem;
+            padding: 1rem;
+            background: #f8f9fa;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            color: #5a6c7d;
+        }
+
+        /* CSS Selectors Demo */
+        .selectors-demo {
+            background: #ffffff;
+            padding: 2rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+            border: 1px solid #e1e8ed;
+        }
+
+        .selector-examples {
+            margin-top: 1rem;
+        }
+
+        .selector-examples > * {
+            margin: 1rem 0;
+            padding: 1rem;
+            border-radius: 4px;
+        }
+
+        #unique-element { 
+            color: #e74c3c; 
+            font-weight: 600;
+            background: #fdf2f2;
+            border-left: 4px solid #e74c3c;
+        }
+
+        .highlight { 
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            color: #856404;
+        }
+
+        .selector-examples p:nth-child(4),
+        .selector-examples p:nth-child(6) { 
+            background: #f8f9fa; 
+            border-left: 4px solid #6c757d;
+        }
+
+        .hover-effect {
+            background: #e9ecef;
+            border: 1px solid #ced4da;
+            padding: 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: inline-block;
+            margin: 1rem 0;
+        }
+
+        .hover-effect:hover { 
+            background: #007bff; 
+            color: white; 
+            transform: translateY(-1px);
+            box-shadow: 0 2px 8px rgba(0,123,255,0.3);
+        }
+
+        /* Flexbox Layout */
+        .flexbox-demo {
+            background: #ffffff;
+            padding: 2rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+            border: 1px solid #e1e8ed;
+        }
+
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin: 1.5rem 0;
+        }
+
+        .flex-item {
+            background: #6c5ce7;
+            color: white;
+            padding: 1.5rem;
+            border-radius: 6px;
+            flex: 1;
+            text-align: center;
+            min-width: 140px;
+            font-weight: 500;
+            transition: transform 0.2s ease;
+        }
+
+        .flex-item:hover {
+            transform: scale(1.02);
+        }
+
+        .flex-properties {
+            background: #f8f9fa;
+            padding: 1rem;
+            border-radius: 4px;
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            color: #5a6c7d;
+        }
+
+        /* Layout Techniques */
+        .layout-demo {
+            background: #ffffff;
+            padding: 2rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+            border: 1px solid #e1e8ed;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .grid-item {
+            background: #00b894;
+            color: white;
+            padding: 1.5rem;
+            border-radius: 6px;
+            text-align: center;
+            font-weight: 500;
+            transition: transform 0.2s ease;
+        }
+
+        .grid-item:hover {
+            transform: scale(1.02);
+        }
+
+        .grid-properties {
+            background: #f8f9fa;
+            padding: 1rem;
+            border-radius: 4px;
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            color: #5a6c7d;
+        }
+
+        /* Main Container & Sections */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .section {
+            margin: 3rem 0;
+            background: rgba(255,255,255,0.95);
+            padding: 2.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            border: 1px solid #e1e8ed;
+        }
+
+        .section h2 {
+            color: #2c3e50;
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+            font-weight: 600;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #3498db;
+        }
+
+        /* Responsive Design Section */
+        .responsive-info {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 6px;
+            margin: 1rem 0;
+        }
+
+        .responsive-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .responsive-list li {
+            padding: 0.5rem 0;
+            border-left: 4px solid #17a2b8;
+            padding-left: 1rem;
+            margin: 0.5rem 0;
+            background: white;
+            border-radius: 0 4px 4px 0;
+        }
+
+        .technique-highlight {
+            background: #e3f2fd;
+            padding: 1rem;
+            border-radius: 4px;
+            margin-top: 1rem;
+            border-left: 4px solid #2196f3;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            .typography-demo h1 { font-size: 2rem; }
+            .font-examples { grid-template-columns: 1fr; }
+            .flex-container { flex-direction: column; }
+            .section { padding: 1.5rem; }
+            .image-gallery { flex-direction: column; align-items: center; }
+            .units-container { grid-template-columns: 1fr; }
+        }
+
+        @media (max-width: 480px) {
+            .typography-demo h1 { font-size: 1.6rem; }
+            .section { padding: 1rem; margin: 1.5rem 0; }
+            .container { padding: 0 0.5rem; }
+            .grid-container { grid-template-columns: 1fr; }
+        }
+
+        /* Subtle Animation */
+        .section {
+            animation: fadeInUp 0.6s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 3rem 1rem;
+            color: #5a6c7d;
+            background: white;
+            margin-top: 2rem;
+            border-top: 1px solid #e1e8ed;
+        }
+
+        .footer h3 {
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }

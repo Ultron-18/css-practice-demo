@@ -1,28 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>CSS Learning Outcome Demo</title>
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Fundamentals Demo</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>My CSS Practice Page</h1>
-    <p>Exploring key CSS concepts in a practical layout</p>
-  </header>
+    <div class="container">
+        <header class="typography-demo">
+            <h1>CSS Fundamentals Demo</h1>
+            <p class="subtitle">
+                A comprehensive guide to modern CSS concepts and techniques
+            </p>
+        </header>
 
-  <main class="card-container">
-    <div class="profile-card">
-      <img src="https://images.unsplash.com/photo-1693994866608-1159b9e28eb2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjJ8fHByb2ZpbGUlMjBpbWFnZXxlbnwwfHwwfHx8MA%3D%3D" alt="Profile Picture" />
-      <h2 class="name">Jane Doe</h2>
-      <p class="role">Frontend Developer</p>
-      <p class="description">Loves building clean and responsive UI with HTML, CSS, and JavaScript.</p>
+        <!-- Typography & Fonts -->
+        <section class="section">
+            <h2>Typography & Font Styling</h2>
+            <div class="font-examples">
+                <div class="font-card serif-text">
+                    <h3>Serif Typography</h3>
+                    <p>Traditional and elegant typeface featuring small decorative strokes called serifs. Ideal for printed materials and formal documents where readability in long texts is essential.</p>
+                </div>
+                <div class="font-card sans-serif-text">
+                    <h3>Sans-Serif Typography</h3>
+                    <p>Modern and clean typeface without decorative strokes. Perfect for digital interfaces, websites, and applications due to excellent screen readability and contemporary appearance.</p>
+                </div>
+                <div class="font-card monospace-text">
+                    <h3>Monospace Typography</h3>
+                    <p>Fixed-width typeface where each character occupies the same horizontal space. Essential for code editors, terminals, and any context requiring precise character alignment.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Units Demo -->
+        <section class="section units-demo">
+            <h2>CSS Units: Pixels, Em, and Rem</h2>
+            <div class="units-container">
+                <div class="unit-example px-example">
+                    <span class="unit-label">Pixel Units (px)</span>
+                    Absolute measurement unit - 16px font size with fixed dimensions that don't scale with user preferences or parent elements.
+                </div>
+                <div class="unit-example em-example">
+                    <span class="unit-label">Em Units (em)</span>
+                    Relative to parent element - 1.2em font size that scales based on the immediate parent's font size, creating cascading effects.
+                </div>
+                <div class="unit-example rem-example">
+                    <span class="unit-label">Root Em Units (rem)</span>
+                    Relative to root element - 1.1rem font size that scales consistently based on the document root, avoiding inheritance issues.
+                </div>
+            </div>
+        </section>
+
+        <!-- Image Formatting -->
+        <section class="section">
+            <h2>Image Formatting & Styling</h2>
+            <div class="image-gallery">
+                <div class="image-container">
+                    <h4>Circular Images</h4>
+                    <img src="https://images.unsplash.com/photo-1746908592757-2c1d682b71db?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDMxfDZzTVZqVExTa2VRfHxlbnwwfHx8fHw%3D" alt="Circular formatted image" class="img-round">
+                </div>
+                <div class="image-container">
+                    <h4>Rounded Rectangles</h4>
+                    <img src="https://images.unsplash.com/photo-1746294856120-e47aff63b775?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDMyfDZzTVZqVExTa2VRfHxlbnwwfHx8fHw%3D" alt="Square formatted image" class="img-square">
+                </div>
+                <div class="image-container">
+                    <h4>Profile Style</h4>
+                    <img src="https://images.unsplash.com/photo-1746294856120-e47aff63b775?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDMyfDZzTVZqVExTa2VRfHxlbnwwfHx8fHw%3D" alt="Profile image" class="img-round">
+                </div>
+                <div class="image-container">
+                    <h4>Card Thumbnails</h4>
+                    <img src="https://images.unsplash.com/photo-1746730229472-f8cf5b58f10d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDM4fDZzTVZqVExTa2VRfHxlbnwwfHx8fHw%3D" alt="Thumbnail image" class="img-square">
+                </div>
+            </div>
+            <p class="image-gallery-description">
+                Demonstrates border-radius, object-fit, and box-shadow properties for professional image presentation
+            </p>
+        </section>
+
+        <!-- Box Model -->
+        <section class="section box-model-demo">
+            <h2>CSS Box Model</h2>
+            <div class="box-example">
+                Content Area with Padding, Border & Margin
+            </div>
+            <div class="box-explanation">
+                <strong>Box Model Calculation:</strong> Content (240px) + Padding (40px) + Border (10px) = Total Width: 290px<br>
+                Understanding the box model is crucial for precise layout control and spacing calculations.
+            </div>
+        </section>
+
+        <!-- CSS Selectors -->
+        <section class="section selectors-demo">
+            <h2>CSS Selectors & Targeting</h2>
+            <div class="selector-examples">
+                <p id="unique-element">ID Selector: Targets a unique element using #unique-element selector with highest specificity</p>
+                <p class="highlight">Class Selector: Applies styling to elements with .highlight class, reusable across multiple elements</p>
+                <p>Pseudo-selector Example: This paragraph demonstrates nth-child selector usage</p>
+                <p>Pseudo-selector Example: Alternating styles applied automatically through CSS rules</p>
+                <div class="hover-effect">
+                    Interactive Hover Effect: Mouse over this element to see transition animations and state changes
+                </div>
+            </div>
+        </section>
+
+        <!-- Flexbox Demo -->
+        <section class="section flexbox-demo">
+            <h2>Flexbox Layout System</h2>
+            <div class="flex-container">
+                <div class="flex-item">Flexible Item</div>
+                <div class="flex-item">Responsive Layout</div>
+                <div class="flex-item">Dynamic Sizing</div>
+            </div>
+            <div class="flex-properties">
+                <strong>Flexbox Properties:</strong> justify-content (horizontal alignment), align-items (vertical alignment), 
+                flex-wrap (wrapping behavior), gap (spacing between items), flex (growth/shrink ratios)
+            </div>
+        </section>
+
+        <!-- Grid Layout -->
+        <section class="section layout-demo">
+            <h2>CSS Grid Layout System</h2>
+            <div class="grid-container">
+                <div class="grid-item">Grid Item One</div>
+                <div class="grid-item">Grid Item Two</div>
+                <div class="grid-item">Grid Item Three</div>
+                <div class="grid-item">Grid Item Four</div>
+                <div class="grid-item">Grid Item Five</div>
+                <div class="grid-item">Grid Item Six</div>
+            </div>
+            <div class="grid-properties">
+                <strong>Grid Features:</strong> auto-fit (responsive columns), minmax() (flexible sizing), 
+                gap (consistent spacing), grid-template-columns (column definitions)
+            </div>
+        </section>
+
+        <!-- Responsive Design -->
+        <section class="section">
+            <h2>Responsive Design Implementation</h2>
+            <div class="responsive-info">
+                <p><strong>Resize your browser window</strong> to observe responsive behavior across different screen sizes:</p>
+                <ul class="responsive-list">
+                    <li><strong>Mobile Devices:</strong> Single column layout with optimized spacing (< 480px)</li>
+                    <li><strong>Tablet Devices:</strong> Adjusted grid systems and flexible components (< 768px)</li>
+                    <li><strong>Desktop Displays:</strong> Full multi-column layout with maximum content density (> 768px)</li>
+                </ul>
+            </div>
+            <div class="technique-highlight">
+                <strong>Responsive Techniques:</strong> Media queries, fluid grids, flexible images, relative units, 
+                mobile-first approach, progressive enhancement, and adaptive breakpoints
+            </div>
+        </section>
+
+        <footer class="footer">
+            <h3>CSS Fundamentals Mastered</h3>
+            <p>&copy; My learning Portfolio</p>
+            <p class="footer-text">Continue building upon these foundations to create sophisticated web layouts and user interfaces.</p>
+        </footer>
     </div>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 My Learning Portfolio</p>
-  </footer>
 </body>
 </html>
