@@ -64,7 +64,7 @@ This project helps learners:
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/css-practice-demo.git
+git clone https://github.com/ultron-18/css-practice-demo.git
 cd css-practice-demo
 ````
 
