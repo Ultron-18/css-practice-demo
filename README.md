@@ -27,6 +27,13 @@ It's a foundational demo focused on clean, organized code and visual layout stru
 👉 [Click to View Live](https://ultron-18.github.io/css-practice-demo/)  
 
 
+## ✨ Features
+
+- Clean, semantic HTML structure
+- Flexbox-based layout
+- Organized CSS styling
+
+
 ## 📁 How to Run Locally
 
 ```bash
