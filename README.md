@@ -1,86 +1,35 @@
-## 🎨 CSS Practice Demo
+# CSS Practice Demo
 
-![Status](https://img.shields.io/badge/status-learning-blue)
-![CSS](https://img.shields.io/badge/tech-CSS3-green)
-![Responsive](https://img.shields.io/badge/mobile%20responsive-yes-brightgreen)
+A simple layout project built with HTML and CSS to practice modern layout techniques and component styling.
 
+## 🚀 Project Overview
 
-A practical HTML & CSS demo project showcasing key CSS concepts such as:
+This project was created to improve my understanding of:
+- Flexbox layout systems
+- Spacing, alignment, and positioning
+- Responsive design techniques
+- Basic component structuring in HTML/CSS
 
-- ✅ CSS properties and selectors  
-- ✅ Text and font styling  
-- ✅ Images styled via CSS  
-- ✅ Box model  
-- ✅ px vs em vs rem units  
-- ✅ Layout techniques  
-- ✅ Flexbox  
-- ✅ Responsive design with media queries
+It's a foundational demo focused on clean, organized code and visual layout structure — ideal for developing muscle memory with pure CSS.
 
-This project is designed to help you learn and visualize how modern CSS works in real-world layouts using a clean, simple profile card.
+## 🛠️ Tech Stack
 
----
-
-## 🔍 Live Preview
-
-➡️ **[View on GitHub Pages](https://ultron-18.github.io/css-practice-demo/)**  
-
----
-
-## 📁 Project Structure
-
-```
-
-css-practice-demo/
-├── index.html       # HTML markup for the page
-├── styles.css       # CSS for styling and layout
-└── README.md        # Project documentation
-
-````
-
----
+- HTML5
+- CSS3 (Flexbox)
 
 ## 📸 Screenshot
 
-![image](https://github.com/user-attachments/assets/c659d767-5cb2-44f2-9b64-400cbf245c91)
+![screenshot](https://your-screenshot-url-here.com)  
+<sub>Add a real screenshot of the layout here — I can help you upload one if needed</sub>
 
+## 🌐 Live Demo
 
----
+👉 [Click to View Live](https://your-demo-link.netlify.app/)  
+<sub>If it’s not live yet, I’ll help you deploy it for free in minutes.</sub>
 
-## 🧠 Learning Outcomes
-
-This project helps learners:
-
-- Understand how to apply CSS selectors to style HTML elements
-- Style text, fonts, and images using modern CSS
-- Learn the box model and layout behavior
-- Compare unit types: `px`, `em`, and `rem`
-- Use Flexbox to build adaptive layouts
-- Apply responsive design using media queries
-
----
-
-## 💻 How to Run
-
-1. Clone the repository:
+## 📁 How to Run Locally
 
 ```bash
-git clone https://github.com/ultron-18/css-practice-demo.git
+git clone https://github.com/Ultron-18/css-practice-demo.git
 cd css-practice-demo
-````
-
-2. Open `index.html` in any modern browser.
-
----
-
-
-
-## 📬 Feedback or Contribution
-
-Feel free to open issues or submit pull requests with improvements or new layout challenges.
-
----
-
-## 📄 License
-
-This project is licensed under the [MIT License](LICENSE).
-
+open index.html in your browser
