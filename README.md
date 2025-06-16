@@ -19,13 +19,13 @@ It's a foundational demo focused on clean, organized code and visual layout stru
 
 ## 📸 Screenshot
 
-![screenshot](https://your-screenshot-url-here.com)  
-<sub>Add a real screenshot of the layout here — I can help you upload one if needed</sub>
+![screenshot](https://github.com/user-attachments/assets/0154d340-7615-4711-a3b2-4aea82df1751)
+
 
 ## 🌐 Live Demo
 
-👉 [Click to View Live](https://your-demo-link.netlify.app/)  
-<sub>If it’s not live yet, I’ll help you deploy it for free in minutes.</sub>
+👉 [Click to View Live](https://ultron-18.github.io/css-practice-demo/)  
+
 
 ## 📁 How to Run Locally
 
@@ -33,3 +33,4 @@ It's a foundational demo focused on clean, organized code and visual layout stru
 git clone https://github.com/Ultron-18/css-practice-demo.git
 cd css-practice-demo
 open index.html in your browser
+```
