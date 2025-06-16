@@ -20,7 +20,7 @@ It's a foundational demo focused on clean, organized code and visual layout stru
 
 ## 📸 Screenshot
 
-![screenshot](https://github.com/user-attachments/assets/0154d340-7615-4711-a3b2-4aea82df1751)
+![CSS Flexbox Layout Preview](https://github.com/user-attachments/assets/0154d340-7615-4711-a3b2-4aea82df1751)
 
 
 ## 🌐 Live Demo
